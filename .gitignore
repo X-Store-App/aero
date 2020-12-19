@@ -1,6 +1,7 @@
 __pycache__
 dist/
 build/
+aero.spec
 
 # IDES
 .vscode
