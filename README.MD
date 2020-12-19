@@ -20,11 +20,11 @@ You can install Aero from the [releases page](https://github.com/X-Store-App/aer
 
 #### How to export tasks?
 
-Aero tries to find your tasks in the aeroconfig package.
+Aero tries to find your tasks in the aeroconfig.py file.
 
 #### Creating a default task
 
-When hitting `aero` with 0 arguments, It'll try to find the `Default` function.
+When hitting `aero` with 0 arguments, It'll try to find the `default` function.
 
 <div id="build">
 
