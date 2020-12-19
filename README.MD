@@ -33,6 +33,7 @@ When hitting `aero` with 0 arguments, It'll try to find the `default` function.
 </div>
 
 Aero uses Aero to build itself. To get started, run `aero`.
+To build Aero, use `aero build`.
 
 ### Sample Aero configuration file
 ```py
