@@ -1,4 +1,5 @@
 import os
 
-def getConfig():
+
+def get_config():
     return os.path.join(os.getcwd(), 'aeroconfig.py')
