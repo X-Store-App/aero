@@ -1,6 +1,6 @@
 import argparse
 import getConfig
-
+import importlib.util
 
 def __main__():
     # CLI
@@ -10,7 +10,12 @@ def __main__():
     args = parser.parse_args()
     if args.task is None:
         args.task = 'default'
-    print(args)
+    # Execute task
+    spec = importlib.util.spec_from_file_location('', getConfig.get_config())
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    func = getattr(module, args.task)
+    func()
 
 
 if __name__ == "__main__":
