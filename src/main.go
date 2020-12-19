@@ -1,5 +1,0 @@
-package aero
-
-func main() {
-
-}
