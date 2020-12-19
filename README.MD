@@ -24,7 +24,7 @@ Aero tries to find your tasks in the aeroconfig package.
 
 #### Creating a default task
 
-When hitting `aero` with 0 arguments, It'll try to find the `default` function.
+When hitting `aero` with 0 arguments, It'll try to find the `Default` function.
 
 <div id="build">
 
@@ -42,8 +42,7 @@ import (
 	"fmt"
 )
 
-func default(stop) {
+func Default(stop) {
 	fmt.Println("Hello, world!")
-	stop()
 }
 ```
