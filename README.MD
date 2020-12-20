@@ -9,6 +9,13 @@ Aero is a task runner made for Golang and made with Python. It is somehow simila
 My motivation to do this was that I needed a cross platform alternative to Make for [XStore](https://github.com/X-Store-App).
 
 ### How to use
+
+#### Prerequisites
+
+- [Python 3.8+](https://python.org)
+- [Pipenv](https://github.com/pypa/pipenv)
+- [Aero](https://github.com/X-Store-App/aero)
+
 #### Installation
 
 You can install Aero from the [releases page](https://github.com/X-Store-App/aero-task-runner/releases) or [build Aero yourself](#build).
