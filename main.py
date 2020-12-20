@@ -1,5 +1,6 @@
 import argparse
-import getConfig
+import os
+from utilities.getconfig import get_config
 import importlib.util
 
 def __main__():
@@ -11,7 +12,7 @@ def __main__():
     if args.task is None:
         args.task = 'default'
     # Execute task
-    spec = importlib.util.spec_from_file_location('', getConfig.get_config())
+    spec = importlib.util.spec_from_file_location('', get_config())
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     func = getattr(module, args.task)
