@@ -1,0 +1,25 @@
+name: Release
+
+on: 
+  release:
+    types: [created]
+
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: python3 main.py
+      - name: Build
+        run: python3 main.py build
+      - name: Publish
+        uses: actions/create-release@v1
+        with:
+          tag_name: assdf
+          release_name: ahjgsf
