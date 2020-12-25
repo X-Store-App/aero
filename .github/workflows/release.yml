@@ -21,8 +21,8 @@ jobs:
             artifact_name: aero.exe
             asset_name: aero-windows
           - os: macos-latest
-            artifact_name: mything
-            asset_name: mything-macos-amd64
+            artifact_name: aero
+            asset_name: aero-macos
 
     steps:
       - name: Checkout
