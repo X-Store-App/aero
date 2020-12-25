@@ -15,6 +15,9 @@ My motivation to do this was that I needed a cross platform alternative to Make 
 - [Python 3.8+](https://python.org)
 - [Pipenv](https://github.com/pypa/pipenv)
 - [Aero](https://github.com/X-Store-App/aero)
+- [Git](https://git-scm.com)
+
+All of these are not needed in production, only in development.
 
 #### Installation
 
