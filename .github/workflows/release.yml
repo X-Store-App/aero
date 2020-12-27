@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch_depth: 1
       - name: Install
         run: python3 main.py
       - name: Build
