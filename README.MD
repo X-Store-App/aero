@@ -1,5 +1,7 @@
 # Aero
 
+<iframe src="https://snapcraft.io/aero/embedded?button=black" frameborder="0" width="100%" height="310px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
+
 ### What is Aero?
 
 Aero is a task runner made for Golang and made with Python. It is somehow similar to Gulp.js and very flexible.
