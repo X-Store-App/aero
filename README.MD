@@ -1,6 +1,6 @@
 # Aero
 
-<iframe src="https://snapcraft.io/aero/embedded?button=black" frameborder="0" width="100%" height="310px" style="border: 1px solid #CCC; border-radius: 2px;"></iframe>
+[<img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg">](https://snapcraft.io/aero)
 
 ### What is Aero?
 
