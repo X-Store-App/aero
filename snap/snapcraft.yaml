@@ -1,0 +1,13 @@
+name: aero
+base: core18
+version: '0.0.1'
+summary: A task runner for Python
+description: Aero is a task runner made with the Python scripting language.
+
+grade: stable
+confinement: strict
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil
