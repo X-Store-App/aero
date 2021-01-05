@@ -29,6 +29,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Fetch Tags # Run this step in order to get all annotated and unannotated tags
+        run: git fetch --force --tags
       - name: Install
         run: python3 main.py
       - name: Build
