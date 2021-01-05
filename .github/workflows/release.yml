@@ -1,8 +1,8 @@
 name: Release
 
 on: 
-  release:
-    types: [created]
+  pull_request:
+    branches: [master]
 
 env:
   GITHUB_TOKEN: ${{ github.token }}
@@ -38,11 +38,3 @@ jobs:
         uses: bruceadams/get-release@v1.2.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: dist/${{ matrix.artifact_name }}
-          asset_name: ${{ matrix.asset_name }}
-          tag: ${{ github.ref }}
-          overwrite: true
