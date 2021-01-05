@@ -14,7 +14,7 @@ def build():
     # get date
     date = datetime.now(timezone.utc)
     # get last commit
-    commit = subprocess.check_output(["git", "describe", "--tags"])
+    commit = subprocess.check_output(["git", "describe"]) # , "--tags"])
     # now we output all this information to a json friendly file in our dist folder
     file = Path('./dist/build.json')
     jsonData = json.dumps(obj={
