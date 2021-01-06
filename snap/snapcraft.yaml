@@ -8,6 +8,7 @@ grade: stable
 confinement: strict
 
 parts:
-  my-part:
+  binary:
     # See 'snapcraft plugins'
-    plugin: nil
+    plugin: dump
+    source: https://github.com/X-Store-App/aero/releases/download/v0.0.1/aero
